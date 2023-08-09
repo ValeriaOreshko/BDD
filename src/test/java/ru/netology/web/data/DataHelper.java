@@ -9,10 +9,12 @@ public class DataHelper {
     }
 
     public static VerificationCode getVerificationCode () {
+
         return new VerificationCode("12345");
     }
 
     public static AuthInfo getAuthInfo () {
+
         return new AuthInfo("vasya", "qwerty123");
     }
 
@@ -25,10 +27,12 @@ public class DataHelper {
     }
 
     public static int generateValidAmount(int balance) {
+
         return new Random().nextInt(Math.abs(balance)) + 1;
     }
 
     public static int generateInvalidAmount(int balance) {
+
         return Math.abs(balance) + new Random().nextInt(10000);
     }
 
